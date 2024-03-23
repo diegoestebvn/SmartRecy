@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/img2"
+    tools:context=".IngresarContraseña">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/baseline_lock_person_24"
+        android:backgroundTint="#4CAF50"/>
+
+    <EditText
+        android:id="@+id/editTextContra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/lavender_border"
+        android:drawableLeft="@drawable/baseline_password_24"
+        android:drawablePadding="10dp"
+        android:hint="Ingrese la contraseña"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColor="#0B0B0B" />
+
+    <Button
+        android:id="@+id/confirmarContra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextContra"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Confirmar Contraseña"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

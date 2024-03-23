@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo22"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="697dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/productoNombre"
+                android:layout_width="348dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/lavender_border"
+                android:drawableLeft="@drawable/baseline_product_24"
+                android:drawablePadding="8dp"
+                android:hint="Nombre del Producto"
+                android:padding="8dp"
+                android:textColor="#0B0B0B" />
+
+            <EditText
+                android:id="@+id/productoPrecio"
+                android:layout_width="348dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/lavender_border"
+                android:drawableLeft="@drawable/baseline_price_24"
+                android:drawablePadding="8dp"
+                android:hint="Precio del Producto"
+                android:inputType="numberDecimal"
+                android:padding="8dp"
+                android:textColor="#0B0B0B" />
+
+            <EditText
+                android:id="@+id/productoPeso"
+                android:layout_width="348dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/lavender_border"
+                android:drawableLeft="@drawable/baseline_done_24"
+                android:drawablePadding="8dp"
+                android:hint="Peso del Producto"
+                android:inputType="numberDecimal"
+                android:padding="8dp"
+                android:textColor="#0B0B0B" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/registrarProductoButton"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:text="Registrar"
+                    android:textSize="17sp"
+                    app:cornerRadius="30dp"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#4CAF50"/>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="1dp" />
+
+                <Button
+                    android:id="@+id/eliminarProductoButton"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:text="Eliminar"
+                    android:textSize="17sp"
+                    app:cornerRadius="30dp"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#4CAF50"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/actualizarListaButton"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:text="Actualizar Lista"
+                    android:textSize="17sp"
+                    app:cornerRadius="30dp"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#4CAF50"/>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="1dp" />
+
+                <Button
+                    android:id="@+id/botonCalculo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="59dp"
+                    android:background="@drawable/baseline_calculate_24"
+                    android:backgroundTint="@color/black"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
+                    app:cornerRadius="30dp" />
+
+                <Button
+                    android:id="@+id/actualizarPrecioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:text="Actualizar P.P"
+                    android:textSize="17sp"
+                    app:cornerRadius="30dp"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#4CAF50"/>
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/productoListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:cacheColorHint="@color/black"
+                android:divider="@color/black"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

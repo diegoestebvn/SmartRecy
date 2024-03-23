@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo22"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CalculoActivity">
+
+    <EditText
+        android:id="@+id/editTextKg"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/lavender_border"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/baseline_done_24"
+        android:drawablePadding="8dp"
+        android:hint="Cantidad en kg"
+        android:inputType="numberDecimal"
+        android:padding="8dp"
+        android:textColor="#0B0B0B"/>
+
+    <EditText
+        android:id="@+id/editTextPrecio"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/editTextKg"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/lavender_border"
+        android:drawableLeft="@drawable/baseline_price_24"
+        android:drawablePadding="8dp"
+        android:hint="Precio por kg"
+        android:inputType="numberDecimal"
+        android:padding="8dp"
+        android:textColor="#0B0B0B"/>
+
+    <Button
+        android:id="@+id/botonCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_below="@id/editTextPrecio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Calcular"
+        android:textSize="17sp"
+        app:cornerRadius="30dp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4CAF50"/>
+
+    <TextView
+        android:id="@+id/textViewResultado"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/botonCalcular"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/lavender_border"
+        android:padding="8dp"
+        android:textSize="18sp"
+        android:textColor="#0B0B0B"
+        android:gravity="center"
+        android:text="Resultado: "
+        />
+</RelativeLayout>
